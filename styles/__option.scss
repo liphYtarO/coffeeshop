@@ -1,0 +1,33 @@
+.option {
+   margin-top: 50px;
+   max-width: 1700px;
+   margin-bottom: 80px;
+   margin-left: auto;
+   margin-right: auto;
+
+   &__gallery {
+      margin-left: 40px;
+      font-size: 110px;
+      text-transform: uppercase;
+      color: $primary;
+      text-shadow: 0px 0px 24px red;
+      letter-spacing: 5.5px;
+      font-family: $font-family-2;
+   }
+   &__option {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   &__galleryWrapper {
+      margin-right: 60px;
+   }
+
+   &__styleWrapper {
+      height: 100%;
+   }
+   &__area {
+      object-fit: cover;
+      height: 100%;
+   }
+}

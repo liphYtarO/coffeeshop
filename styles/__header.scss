@@ -1,0 +1,104 @@
+.header{
+
+    border-bottom: 1px solid $gray;
+
+    &__content{
+        max-width: 1200px;
+
+        margin-left: auto;
+        margin-right: auto;
+       
+        display: grid;
+        grid-template-columns: 1fr 230px 1fr;
+        
+        align-items: center;
+
+        &:first-child{
+            border-left: 1px solid $gray;    
+        }
+
+        &:last-child{
+            border-right: 1px solid $gray;
+        }
+
+    }
+    &__nav{
+
+        display: flex;
+        gap: 2rem;
+
+        &--item{
+
+            font-size: 22px;
+
+            &:first-child{
+                margin-left: 3rem;
+            }
+            &--link{
+                color: white;
+                font-size: 20px;
+                font-family: BebasNeue;
+            }
+            &--icon{
+                color: white;
+                margin-left: 6px;
+                font-size: 17px;
+            }
+        }
+
+        
+        
+    }
+
+    &__logo{
+
+        border-right: 1px solid $gray;
+        border-left: 1px solid $gray;
+
+       
+        
+        margin-left: auto;
+         margin-right: auto;
+
+        &--img{
+            width: 130px;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            
+        }
+    }
+    
+    &__info{
+
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+
+       
+        &--social{
+
+            color: white;
+            display: flex;
+            gap: 1.5rem;
+            margin-left: 4rem;
+            border-right: 1px solid $gray;
+            height: 100%;
+            align-items: center;
+    
+
+            &--icon{
+                font-size: 22px;
+            }
+        }
+        &--contact{
+            color: white;
+           font-family: BebasNeue, sans-serif;
+            letter-spacing: 4px;
+            font-size: 22px;
+            margin-left: 1.5rem;
+
+
+        }
+    }
+}

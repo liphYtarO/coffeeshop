@@ -1,0 +1,52 @@
+.hero {
+   background: url('../img/cup.jpg');
+   height: 90vh;
+   background-repeat: no-repeat;
+   background-position-y: -30rem;
+   background-position-x: -1rem;
+
+   &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &--right {
+         color: white;
+         margin-top: 5rem;
+      }
+
+      &--label {
+         font-family: Arkipelago, sans-serif;
+         font-size: 5rem;
+         color: $primary;
+         text-transform: none;
+         text-shadow: 0px 0px 25px #d22226;
+      }
+
+      &--heading {
+         font-family: BebasNeue, sans-serif;
+         text-transform: uppercase;
+
+         color: rgb(212, 144, 144);
+         text-shadow: 0px 0px 24px $primary;
+         font-size: 7rem;
+         letter-spacing: 5px;
+         max-width: 500px;
+      }
+
+      &--cta {
+         display: flex;
+         margin-top: 10px;
+
+         &--img {
+            max-width: 65px;
+         }
+         &--link {
+            color: white;
+            font-size: 30px;
+            font-family: BebasNeue, sans-serif;
+            margin-left: 1rem;
+            letter-spacing: 2px;
+         }
+      }
+   }
+}

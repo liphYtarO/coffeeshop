@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@600&display=swap');
+
+
+
+@font-face {
+    font-family: Arkipelago;
+    src: url("../font/Arkipelago.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../font/BebasNeue.otf") format("opentype");
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 14px;
+   font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+[tabindex='-1']:focus {
+   outline: 0 !important;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background: $mainBG;
+   min-height: calc(100vh - 100px);
+   width: 100%;
+}
+
+hr {
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+   overflow: visible;
+   background: $gray;
+   border: none;
+   height: 1px;
+   margin: 2rem 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+label {
+   display: inline-block;
+}
+
+ol,
+ul,
+dl {
+   margin: 0;
+   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin-top: 0;
+}
+
+address {
+   font-style: normal;
+   line-height: inherit;
+}
+
+strong {
+   font-weight: bolder;
+}
+
+small {
+   font-size: 80%;
+}
+img {
+   width: 100%;
+}
+
+// table {
+//   border: 1px solid $gray;
+
+//   border-radius: 5px;
+// }
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   text-align: center;
+}
+tbody {
+   border: 1px solid red;
+}
+tr {
+   &:first-child {
+      background: $primary;
+      color: white;
+   }
+}
+td {
+   padding: 1.4rem;
+   border: 1px solid $gray;
+   @media (max-width: 400px) {
+      padding: 0.4rem;
+   }
+}

@@ -1,0 +1,125 @@
+.footer {
+   color: white;
+   margin-top: 70px;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 800px;
+
+   &__end {
+      letter-spacing: 3px;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 32px;
+      text-transform: uppercase;
+      font-family: $font-family-2;
+   }
+
+   .time {
+      text-align: center;
+      &__text {
+         font-size: 70px;
+         text-transform: uppercase;
+         letter-spacing: 15px;
+         font-family: $font-family-2;
+      }
+      &__open {
+         font-family: $font-family-1;
+         font-size: 130px;
+         margin-top: -100px;
+         color: black;
+         text-shadow: 0px 0px 24px $primary;
+      }
+   }
+
+   .direction {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 30px;
+      margin-bottom: 0px;
+      margin-top: 60px;
+
+      &__time {
+         text-align: center;
+
+         &--text {
+            font-family: $font-family-2;
+            font-size: 27px;
+            letter-spacing: 3.7px;
+            line-height: 40px;
+            margin-left: 100px;
+            margin-right: 100px;
+         }
+         &--number {
+            font-family: $font-family-2;
+            text-decoration: underline;
+            margin-top: 50px;
+            &--numb {
+               font-size: 40px;
+               color: white;
+               letter-spacing: 3px;
+            }
+         }
+      }
+
+      &__address {
+         text-align: center;
+         border-left: 1px solid;
+         &--text {
+            font-family: $font-family-2;
+            font-size: 35px;
+            letter-spacing: 2.5px;
+            margin-right: 140px;
+            margin-left: 140px;
+            line-height: 40px;
+         }
+
+         &--btn {
+            margin: 50px;
+            transition: 0.2s;
+            background-color: $primary;
+            padding: 1rem;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            &--link {
+               font-size: 25px;
+
+               color: white;
+
+               letter-spacing: 4px;
+
+               text-transform: uppercase;
+               font-family: BebasNeue, sans-serif;
+            }
+
+            &:hover {
+               background-color: black;
+
+               border: 1px solid $primary;
+               transform: scale(0.9);
+               transition: 0.2s;
+
+               .direction__address--btn--link {
+                  color: red;
+               }
+            }
+         }
+      }
+   }
+
+   .social {
+      max-width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+      font-size: 30px;
+
+      &__icon {
+         color: white;
+      }
+   }
+}
